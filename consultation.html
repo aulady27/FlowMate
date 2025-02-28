@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>FlowMate - Konsultasi</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+  <div class="container">
+    <nav>
+      <div class="menu-icon" id="menu-icon">
+        <i class="fas fa-bars"></i> <!-- Ikon strip tiga -->
+      </div>
+      <ul class="nav-links" id="nav-links">
+        <li><a href="index.html"><i class="fas fa-home"></i> Beranda</a></li>
+        <li><a href="detection.html"><i class="fas fa-stethoscope"></i> Deteksi</a></li>
+        <li><a href="tracking.html"><i class="fas fa-calendar-alt"></i> Catatan</a></li>
+        <li><a href="consultation.html"><i class="fas fa-comments"></i> Konsultasi</a></li>
+        <li><a href="login.html"><i class="fas fa-sign-out-alt"></i> Keluar</a></li>
+      </ul>
+    </nav>
+    <header>
+      <h1>FlowMate</h1>
+      <p>Konsultasi dengan Ahli</p>
+    </header>
+
+    <section class="chat-section">
+      <h2>Chat dengan Ahli</h2>
+      <div class="chat-box">
+        <div class="chat-messages">
+          <div class="message">
+            <p class="sender">Dr. Anna</p>
+            <p class="text">Halo! Ada yang bisa saya bantu?</p>
+          </div>
+          <div class="message user">
+            <p class="sender">Anda</p>
+            <p class="text">Saya mengalami nyeri hebat saat menstruasi.</p>
+          </div>
+        </div>
+        <div class="chat-input">
+          <input type="text" placeholder="Ketik pesan Anda..." id="chat-input">
+          <button id="send-button">Kirim</button>
+        </div>
+      </div>
+    </section>
+
+    <section class="forum-section">
+      <h2>Forum & Komunitas</h2>
+      <div class="forum-topics">
+        <div class="topic">
+          <h3>Tips Mengatasi Nyeri Haid</h3>
+          <p>Diskusi tentang cara mengatasi nyeri haid secara alami.</p>
+        </div>
+        <div class="topic">
+          <h3>Pengalaman Menstruasi Tidak Teratur</h3>
+          <p>Bagikan pengalaman Anda tentang siklus menstruasi yang tidak teratur.</p>
+        </div>
+      </div>
+      <button class="new-topic-button">Buat Topik Baru</button>
+    </section>
+  </div>
+
+  <script src="consultation.js"></script>
+</body>
+</html>

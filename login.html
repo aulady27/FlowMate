@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>FlowMate - Login</title>
+  <link rel="stylesheet" href="styleslogin.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+  <div class="auth-container">
+    <header>
+      <!-- Tambahkan logo di sini -->
+      <img src="logo.png" alt="FlowMate Logo" class="logo">
+      <h1>FlowMate</h1>
+      <p>Masuk ke akun Anda</p>
+    </header>
+
+    <form class="auth-form">
+      <div class="input-group">
+        <label for="email">Email/Nomor HP</label>
+        <input type="text" id="email" name="email" placeholder="Masukkan email atau nomor HP" required>
+      </div>
+
+      <div class="input-group">
+        <label for="password">Password</label>
+        <input type="password" id="password" name="password" placeholder="Masukkan password" required>
+      </div>
+
+      <button type="submit" class="auth-button">Masuk</button>
+
+      <div class="auth-links">
+        <a href="#">Lupa Password?</a>
+        <p>Belum punya akun? <a href="register.html">Daftar di sini</a></p>
+      </div>
+
+      <div class="social-login">
+        <p>Atau masuk dengan:</p>
+        <button type="button" class="social-button google">Google</button>
+        <button type="button" class="social-button apple">Apple ID</button>
+      </div>
+    </form>
+  </div>
+</body>
+</html>

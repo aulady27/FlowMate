@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>FlowMate - Deteksi Gangguan</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+  <nav>
+    <div class="menu-icon" id="menu-icon">
+      <i class="fas fa-bars"></i>
+    </div>
+    <ul class="nav-links" id="nav-links">
+      <li><a href="index.html"><i class="fas fa-home"></i> Beranda</a></li>
+      <li><a href="detection.html"><i class="fas fa-stethoscope"></i> Deteksi</a></li>
+      <li><a href="tracking.html"><i class="fas fa-calendar-alt"></i> Catatan</a></li>
+      <li><a href="consultation.html"><i class="fas fa-comments"></i> Konsultasi</a></li>
+      <li><a href="login.html"><i class="fas fa-sign-out-alt"></i> Keluar</a></li>
+    </ul>
+  </nav>
+
+  <div class="container">
+    <header>
+      <h1>Deteksi Gangguan Menstruasi</h1>
+    </header>
+
+    <section class="questionnaire">
+      <h2>Kuesioner Gejala</h2>
+      <form id="symptoms-form">
+        <div class="question">
+          <p>1. Apakah Anda mengalami nyeri saat menstruasi?</p>
+          <label><input type="radio" name="pain" value="0"> Tidak Ada</label>
+          <label><input type="radio" name="pain" value="1"> Ringan</label>
+          <label><input type="radio" name="pain" value="2"> Sedang</label>
+          <label><input type="radio" name="pain" value="3"> Parah</label>
+        </div>
+
+        <div class="question">
+          <p>2. Berapa lama durasi menstruasi Anda?</p>
+          <label><input type="radio" name="duration" value="0"> Kurang dari 3 hari</label>
+          <label><input type="radio" name="duration" value="1"> 3-5 hari</label>
+          <label><input type="radio" name="duration" value="2"> Lebih dari 5 hari</label>
+        </div>
+
+        <div class="question">
+          <p>3. Bagaimana volume perdarahan Anda?</p>
+          <label><input type="radio" name="flow" value="0"> Ringan</label>
+          <label><input type="radio" name="flow" value="1"> Sedang</label>
+          <label><input type="radio" name="flow" value="2"> Berat</label>
+        </div>
+
+        <div class="question">
+          <p>4. Apakah siklus menstruasi Anda teratur?</p>
+          <label><input type="radio" name="regularity" value="0"> Ya</label>
+          <label><input type="radio" name="regularity" value="1"> Tidak</label>
+        </div>
+
+        <button type="submit" class="submit-button">Analisis Gejala</button>
+      </form>
+    </section>
+
+    <section class="analysis hidden">
+      <h2>Analisis Gejala</h2>
+      <div class="result">
+        <p id="analysis-result"></p>
+      </div>
+      <button class="recommendation-button">Lihat Rekomendasi</button>
+    </section>
+
+    <section class="recommendation hidden">
+      <h2>Rekomendasi</h2>
+      <div class="recommendation-content">
+        <p id="recommendation-text"></p>
+        <button class="consult-button">Konsultasi dengan Dokter</button>
+      </div>
+    </section>
+  </div>
+
+  <script src="detection.js"></script>
+</body>
+</html>

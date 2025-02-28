@@ -1,0 +1,132 @@
+/* General Styles */
+body {
+  font-family: 'Roboto', sans-serif;
+  background-color: #f9f9f9;
+  color: #333;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.auth-container {
+  background-color: #fff;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 400px;
+  text-align: center;
+}
+
+/* Logo Styles */
+.logo {
+  width: 230px; /* Sesuaikan ukuran logo */
+  height: auto; /* Biarkan tinggi menyesuaikan proporsi */
+  margin-bottom: -70px; /* Jarak antara logo dan teks */
+}
+
+header h1 {
+  color: #e91e63;
+  font-size: 2rem;
+  margin-bottom: 10px;
+}
+
+header p {
+  color: #666;
+  margin-bottom: 20px;
+}
+
+/* Auth Form Styles */
+.auth-form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.input-group {
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+}
+
+.input-group label {
+  font-weight: bold;
+  color: #e91e63;
+  margin-bottom: 5px;
+}
+
+.input-group input {
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  font-size: 1rem;
+}
+
+.auth-button {
+  padding: 10px;
+  background-color: #e91e63;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  font-size: 1rem;
+  cursor: pointer;
+  margin-top: 10px;
+}
+
+.auth-button:hover {
+  background-color: #d81b60;
+}
+
+.auth-links {
+  margin-top: 10px;
+}
+
+.auth-links a {
+  color: #e91e63;
+  text-decoration: none;
+}
+
+.auth-links a:hover {
+  text-decoration: underline;
+}
+
+/* Social Login Styles */
+.social-login {
+  margin-top: 20px;
+}
+
+.social-login p {
+  color: #666;
+  margin-bottom: 10px;
+}
+
+.social-button {
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  font-size: 1rem;
+  cursor: pointer;
+  width: 100%;
+  margin-bottom: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+
+.social-button.google {
+  background-color: #fff;
+  color: #333;
+}
+
+.social-button.apple {
+  background-color: #000;
+  color: #fff;
+}
+
+.social-button:hover {
+  opacity: 0.9;
+}

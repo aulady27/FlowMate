@@ -1,0 +1,237 @@
+/* General Styles */
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #f9f9f9;
+    color: #333;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+  
+  .container {
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 400px;
+    text-align: center;
+  }
+  /* Navigation Styles */
+nav {
+  background-color: #e91e63;
+  padding: 10px 20px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1000;
+  display: flex;
+  justify-content: center; /* Navbar di tengah */
+  align-items: center;
+}
+
+.menu-icon {
+  font-size: 1.5rem;
+  color: #fff;
+  cursor: pointer;
+  display: none; /* Sembunyikan ikon di desktop */
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+  margin: 0;
+  padding: 0;
+}
+
+.nav-links li a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 1rem;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.nav-links li a:hover {
+  color: #f5f5f5;
+}
+
+/* Responsive Styles untuk Mobile */
+@media (max-width: 768px) {
+  .menu-icon {
+    display: block; /* Tampilkan ikon di mobile */
+  }
+
+  .nav-links {
+    display: none; /* Sembunyikan menu di mobile */
+    flex-direction: column;
+    background-color: #e91e63;
+    position: absolute;
+    top: 50px;
+    left: 50%; /* Posisi menu di tengah */
+    transform: translateX(-50%); /* Geser ke tengah */
+    border-radius: 5px;
+    padding: 10px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    width: 200px; /* Lebar menu saat muncul */
+  }
+
+  .nav-links.active {
+    display: flex; /* Tampilkan menu saat aktif */
+  }
+
+  .nav-links li {
+    margin: 10px 0; /* Jarak antar item menu */
+  }
+
+  .nav-links li a {
+    font-size: 0.9rem; /* Ukuran font lebih kecil di mobile */
+  }
+}
+  
+  header {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  header h1 {
+    color: #e91e63;
+    font-size: 2rem;
+    margin-bottom: 10px;
+  }
+  
+  header p {
+    color: #666;
+    margin-bottom: 20px;
+  }
+  
+  /* Chat Section */
+  .chat-section {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+  }
+  
+  .chat-box {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+  
+  .chat-messages {
+    height: 200px;
+    overflow-y: auto;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 10px;
+    background-color: #f5f5f5;
+  }
+  
+  .message {
+    margin-bottom: 10px;
+  }
+  
+  .message.user {
+    text-align: right;
+  }
+  
+  .message p {
+    margin: 0;
+  }
+  
+  .message .sender {
+    font-weight: bold;
+    color: #e91e63;
+    font-size: 0.9rem;
+  }
+  
+  .message .text {
+    background-color: #fff;
+    padding: 8px;
+    border-radius: 5px;
+    display: inline-block;
+    max-width: 80%;
+    font-size: 0.9rem;
+  }
+  
+  .chat-input {
+    display: flex;
+    gap: 10px;
+  }
+  
+  .chat-input input {
+    flex: 1;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 1rem;
+  }
+  
+  .chat-input button {
+    padding: 10px;
+    background-color: #e91e63;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    cursor: pointer;
+  }
+  
+  .chat-input button:hover {
+    background-color: #d81b60;
+  }
+  
+  /* Forum Section */
+  .forum-section {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  .forum-topics {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+  }
+  
+  .topic {
+    background-color: #f5f5f5;
+    padding: 15px;
+    border-radius: 10px;
+  }
+  
+  .topic h3 {
+    color: #e91e63;
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+  }
+  
+  .topic p {
+    color: #666;
+    font-size: 0.9rem;
+  }
+  
+  .new-topic-button {
+    padding: 10px;
+    background-color: #e91e63;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    cursor: pointer;
+    width: 100%;
+    margin-top: 10px;
+  }
+  
+  .new-topic-button:hover {
+    background-color: #d81b60;
+  }

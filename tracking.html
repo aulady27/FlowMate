@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>FlowMate - Catatan Siklus</title>
+  <link rel="stylesheet" href="stylescatatan.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+  <div class="container">
+    <nav>
+      <div class="menu-icon" id="menu-icon">
+        <i class="fas fa-bars"></i> <!-- Ikon strip tiga -->
+      </div>
+      <ul class="nav-links" id="nav-links">
+        <li><a href="index.html"><i class="fas fa-home"></i> Beranda</a></li>
+        <li><a href="detection.html"><i class="fas fa-stethoscope"></i> Deteksi</a></li>
+        <li><a href="tracking.html"><i class="fas fa-calendar-alt"></i> Catatan</a></li>
+        <li><a href="consultation.html"><i class="fas fa-comments"></i> Konsultasi</a></li>
+        <li><a href="login.html"><i class="fas fa-sign-out-alt"></i> Keluar</a></li>
+      </ul>
+    </nav>
+    <header>
+      <h1>FlowMate</h1>
+      <p>Catatan & Pemantauan Siklus</p>
+    </header>
+
+    <section class="daily-input">
+      <h2>Input Data Harian</h2>
+      <form>
+        <label for="date">Tanggal:</label>
+        <input type="date" id="date" name="date" required>
+
+        <label for="pain-level">Tingkat Nyeri:</label>
+        <select id="pain-level" name="pain-level">
+          <option value="0">Tidak Ada</option>
+          <option value="1">Ringan</option>
+          <option value="2">Sedang</option>
+          <option value="3">Parah</option>
+        </select>
+
+        <label for="mood">Mood:</label>
+        <input type="text" id="mood" name="mood" placeholder="Bagaimana perasaan Anda hari ini?">
+
+        <label for="symptoms">Gejala Lainnya:</label>
+        <textarea id="symptoms" name="symptoms" rows="4" placeholder="Catat gejala lainnya..."></textarea>
+
+        <button type="submit">Simpan</button>
+      </form>
+    </section>
+
+    <section class="history">
+      <h2>Riwayat Siklus</h2>
+      <div class="chart">
+        <!-- Placeholder untuk grafik -->
+        <p>Grafik akan ditampilkan di sini.</p>
+      </div>
+    </section>
+  </div>
+</body>
+</html>
